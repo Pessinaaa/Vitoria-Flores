@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*MENU*/
+#menu{
+    position: fixed;
+    top: 0;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 10vh;
+    align-content: space-between;
+    background-color: cadetblue;
+}
+#menu li a{
+    color: white;
+}
+#menu li a:hover{
+    background-color: beige;
+    transition: 0.5s;
+}
+/*FIM MENU*/
+
+section{
+    height: 90vh;
+}
+
+#divmapa{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#mapa{
+    width: 90vw;
+    height: 70vh;
+    border: 0;
+}
