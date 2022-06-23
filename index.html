@@ -8,9 +8,14 @@
         <meta name="keywords" content="flores, flor, decoração, casamento, buquê, arranjo, floricultura, presente, planta, vitória flores">
         <meta name="author" content="Pedro Berveglieri Pessina">
         <meta name="description" content="Site institucional da empresa Vitória Flores & Eventos">
-        <link rel="stylesheet" href="styles/index.css">
+        <!--IMPORTAÇÕES-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="styles/index.css">
+        <!--ÍCONE DA PÁGINA-->
         <link rel="icon" href="#" type="image/x-icon">
         <title>Vitória Flores & Eventos</title>
     </head>
@@ -18,8 +23,8 @@
         <header>
             <!--MENU-->
             <nav>
-                <a href="#inicio" title="Ir para a sessão inicial"><img src="#" alt="Logotipo da empresa Vitória Flores & Eventos"></a>
                 <ul id="menu">
+                    <li><a href="#inicio" title="Ir para a sessão inicial"><img id="logo" src="media/images/C3.jpg" alt="Logotipo da empresa Vitória Flores & Eventos"></a></li>
                     <li><a href="#historia">Quem somos</a></li>
                     <li><a href="#galeria">Galeria de imagens</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -31,7 +36,11 @@
             <!--CARROSSEL-->
             <section id="inicio">
                 <h1>Destaques</h1>
-                <p>Carrossel</p>
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="./media/images/C3.jpg"></div>
+                    <div class="item"><img src="./media/images/C3.jpg"></div>
+                    <div class="item"><img src="./media/images/C3.jpg"></div>
+                </div>
             </section>
             <!--HISTÓRIA-->
             <section id="historia">
@@ -70,5 +79,9 @@
             <p>As fotos aqui veiculadas, logotipo e marca são de propriedade da empresa Vitória Flores & Eventos. É vetada a sua reprodução, total ou parcial.</p>
             <p>Vitória Flores | comercio de flores e arranjos LTDA | Endereço: Rua Ponte Rasa, 527 - Ponte Rasa - São Paulo - São Paulo.</p>
         </footer>
+        <!--SCRIPTS-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./scripts/setup.js"></script>
     </body>
 </html>

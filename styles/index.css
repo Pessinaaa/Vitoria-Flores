@@ -12,6 +12,9 @@ header, main{
 }
 
 /*MENU*/
+#logo{
+    height: 10vh;
+}
 #menu{
     position: fixed;
     top: 0;
@@ -32,7 +35,7 @@ header, main{
 /*FIM MENU*/
 
 section{
-    padding-top: 10vh;
+    padding-top: 15vh;
     min-height: 90vh;
 }
 h1, h2{
