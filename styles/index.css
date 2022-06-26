@@ -24,6 +24,7 @@ header, main{
     height: 10vh;
     align-content: space-between;
     background-color: cadetblue;
+    z-index: 1;
 }
 #menu li a{
     color: white;
@@ -46,6 +47,10 @@ h1, h2{
 
 #inicio{
     background-color: aquamarine;
+}
+
+.carrossel{
+    z-index: 0;
 }
 
 #historia{
