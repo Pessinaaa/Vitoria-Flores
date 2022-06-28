@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
@@ -22,16 +22,29 @@ header, main{
     list-style: none;
     width: 100%;
     height: 10vh;
-    align-content: space-between;
     background-color: cadetblue;
     z-index: 1;
+    gap: 4vw;
+}
+#menu li{
+    margin: auto 0;
 }
 #menu li a{
+    font-size: 1.4rem;
     color: white;
+    text-decoration: none;
+    
 }
-#menu li a:hover{
-    background-color: beige;
+#menu li:not(:first-child) a:after{
+    content: "";
+    display: flex;
+    width: 0;
+    height: 2px;
+    background-color: #000;
     transition: 0.5s;
+}
+#menu li:not(:first-child) a:hover:after{
+    width: 100%;
 }
 /*FIM MENU*/
 
@@ -79,11 +92,12 @@ h1, h2{
 
 #lista-icones{
     list-style: none;
+    height: 15vh;
     display: flex;
     width: max-content;
     gap: 5rem;
     margin: auto;
-    padding-bottom: 30vh;
+    align-items: center;
 }
 .icones{
     text-decoration: none;
@@ -91,6 +105,9 @@ h1, h2{
     font-size: 2rem;
 }
 
+#localizacao{
+    padding-top: 15vh;
+}
 #divmapa{
     padding-bottom: 10vh;
     display: flex;
