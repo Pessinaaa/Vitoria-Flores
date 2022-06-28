@@ -61,7 +61,6 @@ h1, h2{
 #inicio{
     background-color: aquamarine;
 }
-
 .carrossel{
     z-index: 0;
 }
@@ -100,9 +99,19 @@ h1, h2{
     align-items: center;
 }
 .icones{
+    display: flex;
     text-decoration: none;
     color: #FFF;
-    font-size: 2rem;
+    font-size: 3rem;
+    gap: 1rem;
+}
+.icones:hover{
+    color: crimson;
+    transition: 0.3s;
+}
+.icones span{
+    font-size: 1.5rem;
+    align-self: center;
 }
 
 #localizacao{
