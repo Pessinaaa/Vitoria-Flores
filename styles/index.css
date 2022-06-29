@@ -89,7 +89,52 @@ h1, h2{
 
 #galeria{
     background-color: cornflowerblue;
+    padding-top: 10vh;
+    display: flex;
+    gap: 5rem;
 }
+.gallery{
+    margin: auto 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding-left: 5vw;
+}
+.gallery a{
+    height: 30vh;
+    width: auto;
+    margin: 20px;
+    border-radius: 1vh;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #000;
+}
+.gallery a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery a img:hover{
+    transform: scale(1.4);
+    transition: 0.25s linear;
+}
+#galeria>a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 3rem;
+    height: max-content;
+    display: inline-flex;
+    gap: 1rem;
+    align-self: center;
+}
+#galeria span{
+    font-size: 2rem;
+    align-self: center;
+}
+#galeria>a:hover{
+    color: crimson;
+    transition: 0.3s;
+}
+
 #contato{
     background-color: darkolivegreen;
 }
