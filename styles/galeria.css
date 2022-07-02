@@ -1,15 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-
 *{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
-}
-
-header, main{
-    font-size: 1.1rem;
 }
 
 /*MENU*/
@@ -33,7 +28,7 @@ header, main{
 #menu li a{
     font-size: 1.4rem;
     color: white;
-    text-decoration: none;
+    text-decoration: none;  
 }
 #menu li:not(:first-child) a:after{
     content: "";
@@ -57,88 +52,33 @@ h1, h2{
     font-size: 1.25rem;
 }
 
-
-#inicio{
-    padding: 0;
-    height: 100vh;
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.carrossel{
-    z-index: 0;
-}
-
-#historia{
-    background-color: burlywood;
-}
-#texto-historia{
-    text-indent: 2rem;
-    padding: 0 15vw;
-}
-#imagem-historia{
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0 1rem 0;
-}
-#frase{
-    text-align: center;
-}
-
-#galeria{
-    background-color: cornflowerblue;
-    padding-top: 10vh;
-    display: flex;
-    gap: 5rem;
-}
-.gallery{
+/*GALERIA*/
+section div{
     margin: auto 0;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-left: 5vw;
 }
-.gallery a{
-    height: 30vh;
+section div a{
+    height: 40vh;
     width: auto;
     margin: 20px;
-    border-radius: 1vh;
+    border-radius: 2vh;
     overflow: hidden;
     box-shadow: 0 3px 5px #000;
 }
-.gallery a img{
+section div a img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.gallery a img:hover{
+section div a img:hover{
     transform: scale(1.4);
     transition: 0.25s linear;
 }
-#galeria>a{
-    text-decoration: none;
-    color: #FFF;
-    font-size: 3rem;
-    height: max-content;
-    display: inline-flex;
-    gap: 1rem;
-    align-self: center;
-}
-#galeria span{
-    font-size: 1.6rem;
-    align-self: center;
-}
-#galeria>a:hover{
-    color: crimson;
-    transition: 0.3s;
-}
+/*FIM GALERIA*/
 
-#contato{
-    background-color: darkolivegreen;
-}
-
-
+/*ÍCONES DE CONTATO*/
 #lista-icones{
     list-style: none;
     height: 15vh;
@@ -147,6 +87,8 @@ h1, h2{
     gap: 5rem;
     margin: auto;
     align-items: center;
+    background-color: bisque;
+    padding: 5vh 0;
 }
 .icones{
     display: flex;
@@ -163,22 +105,7 @@ h1, h2{
     font-size: 1.5rem;
     align-self: center;
 }
-
-#localizacao{
-    padding-top: 15vh;
-}
-#divmapa{
-    padding-bottom: 10vh;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-}
-
-#mapa{
-    width: 90vw;
-    height: 70vh;
-    border: 0;
-}
+/*FIM ÍCONES*/
 
 footer{
     padding: 1.2rem 0;
