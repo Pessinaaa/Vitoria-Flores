@@ -20,7 +20,7 @@
     height: 10vh;
     background-color: cadetblue;
     z-index: 1;
-    gap: 4vw;
+    justify-content: space-evenly;
 }
 #menu li{
     margin: auto 0;
@@ -30,7 +30,12 @@
     color: white;
     text-decoration: none;  
 }
-#menu li:not(:first-child) a:after{
+#menu div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#menu div li a:after{
     content: "";
     display: flex;
     width: 0;
@@ -38,7 +43,7 @@
     background-color: #000;
     transition: 0.5s;
 }
-#menu li:not(:first-child) a:hover:after{
+#menu div li a:hover:after{
     width: 100%;
 }
 /*FIM MENU*/
