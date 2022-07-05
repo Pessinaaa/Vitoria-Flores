@@ -206,18 +206,22 @@ footer{
     }
     nav #menu #menu-list {
         position: fixed;
-        left: 0;
-        top: -100vh;
-        background-color: aqua;
         display: grid;
+        left: 0;
+        top: 10vh;
+        height: 0px;
+        width: 100vw;
+        background-color: burlywood;
         text-align: center;
-        gap: 1rem;
+        align-items: center;
         transition: 0.5s;
-        z-index: -1;
-        padding: 1rem 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
     }
     nav #menu #menu-list.mostrar-menu {
-        top: 10vh;
+        height: 35vh;
+        visibility: visible;
     }
     nav #menu #burger {
         display: block;
@@ -232,14 +236,14 @@ footer{
         display: block;
         height: 4px;
         border-radius: 2px;
-        margin: 7px 0;
+        margin: 5px 0;
         transition: 0.5s;
     }
     nav #menu #burger.fechar:before {
-        transform: translateY(10.6px) rotate(135deg);
+        transform: translateY(8.7px) rotate(135deg);
     }
     nav #menu #burger.fechar:after {
-        transform: translateY(-10.6px) rotate(-135deg);
+        transform: translateY(-8.7px) rotate(-135deg);
     }
     nav #menu #burger.fechar div {
         transform: scale(0);
