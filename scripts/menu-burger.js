@@ -19,5 +19,6 @@ iconBurger.addEventListener('click', toggleMenu);
 iconBurger.addEventListener('touchstart', toggleMenu);
 
 navLinks.forEach(navLink => navLink.addEventListener('click', () => {
-    menuList.classList.remove('mostrar-menu')
+    menuList.classList.remove('mostrar-menu');
+    iconBurger.classList.toggle('fechar')
 }));
