@@ -13,34 +13,35 @@ header, main{
 }
 
 /*MENU*/
-#logo{
+nav {
+    display: flex;
     height: 10vh;
-}
-#menu{
+    width: 100vw;
     position: fixed;
     top: 0;
+    z-index: 1;
+}
+nav #logo {
+    height: 100%;
+}
+nav #menu {
+    background-color: cadetblue;
+    width: 100%;
     display: flex;
     list-style: none;
+    align-items: center;
+}
+nav #menu #menu-list {
     width: 100%;
-    height: 10vh;
-    background-color: cadetblue;
-    z-index: 1;
-    justify-content: space-evenly;
-}
-#menu li{
-    margin: auto 0;
-}
-#menu li a{
-    font-size: 1.4rem;
-    color: white;
-    text-decoration: none;
-}
-#menu div {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
 }
-#menu div li a:after{
+nav #menu #menu-list li a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+}
+nav #menu #menu-list li a:after{
     content: "";
     display: flex;
     width: 0;
@@ -48,8 +49,11 @@ header, main{
     background-color: #000;
     transition: 0.5s;
 }
-#menu div li a:hover:after{
+nav #menu #menu-list li a:hover:after{
     width: 100%;
+}
+nav #menu #burger {
+    display: none;
 }
 /*FIM MENU*/
 
@@ -143,7 +147,7 @@ h1, h2{
     background-color: darkolivegreen;
 }
 
-
+/*ÍCONES CONTATO*/
 #lista-icones{
     list-style: none;
     height: 15vh;
@@ -168,6 +172,7 @@ h1, h2{
     font-size: 1.5rem;
     align-self: center;
 }
+/*FIM ÍCONES CONTATO*/
 
 #localizacao{
     padding-top: 15vh;
@@ -189,4 +194,54 @@ footer{
     padding: 1.2rem 0;
     text-align: center;
     font-size: 1rem;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1023px){
+    nav {
+        justify-content: space-between;
+    }
+    nav #menu {
+        justify-content: flex-end;
+    }
+    nav #menu #menu-list {
+        position: fixed;
+        left: 0;
+        top: -100vh;
+        background-color: aqua;
+        display: grid;
+        text-align: center;
+        gap: 1rem;
+        transition: 0.5s;
+        z-index: -1;
+        padding: 1rem 0;
+    }
+    nav #menu #menu-list.mostrar-menu {
+        top: 10vh;
+    }
+    nav #menu #burger {
+        display: block;
+        width: 30px;
+        margin-right: 1rem;
+    }
+    nav #menu #burger div,
+    nav #menu #burger:after,
+    nav #menu #burger:before {
+        background: #fff;
+        content: "";
+        display: block;
+        height: 4px;
+        border-radius: 2px;
+        margin: 7px 0;
+        transition: 0.5s;
+    }
+    nav #menu #burger.fechar:before {
+        transform: translateY(10.6px) rotate(135deg);
+    }
+    nav #menu #burger.fechar:after {
+        transform: translateY(-10.6px) rotate(-135deg);
+    }
+    nav #menu #burger.fechar div {
+        transform: scale(0);
+    }
 }
