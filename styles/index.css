@@ -172,6 +172,9 @@ h1, h2{
     font-size: 1.5rem;
     align-self: center;
 }
+#telefone{
+    display: none;
+}
 /*FIM ÍCONES CONTATO*/
 
 #localizacao{
@@ -197,7 +200,7 @@ footer{
 }
 
 /*RESPONSIVIDADE*/
-@media screen and (max-width: 1023px){
+@media (max-width: 1023px){
     nav {
         justify-content: space-between;
     }
@@ -247,5 +250,50 @@ footer{
     }
     nav #menu #burger.fechar div {
         transform: scale(0);
+    }
+
+    #imagem-historia img{
+        width: 80vw;
+        height: auto;
+    }
+
+    #galeria{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .gallery{
+        margin: 2rem 0;
+        padding-left: 0;
+    }
+    .gallery a{
+        height: 20vh;
+        margin: 15px;
+    }
+    #galeria>a{
+        font-size: 2.5rem;
+    }
+    #galeria span{
+        font-size: 1.4rem;
+    }
+
+    #lista-icones{
+        height: auto;
+        gap: 1.5rem;
+        
+    }
+    .icones{
+        font-size: 2.5rem;
+    }
+    .icones span{
+        font-size: 1.3rem;
+    }
+    #lista-icones :nth-child(4){
+        display: none;
+    }
+    #telefone{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
     }
 }
