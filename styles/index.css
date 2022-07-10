@@ -201,9 +201,6 @@ footer{
 
 /*RESPONSIVIDADE*/
 @media (max-width: 1023px){
-    nav {
-        justify-content: space-between;
-    }
     nav #menu {
         justify-content: flex-end;
     }
