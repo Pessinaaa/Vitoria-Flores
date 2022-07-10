@@ -22,8 +22,8 @@ nav {
     z-index: 1;
 }
 nav #logo {
-    height: 10vh;
-    width: 10vh;
+    height: 100%;
+    width: 100%;
 }
 nav #menu {
     background-color: cadetblue;
