@@ -250,12 +250,12 @@ footer{
         transform: scale(0);
     }
 
-    #imagem-historia img{
+    #imagem-historia img {
         width: 80vw;
         height: auto;
     }
 
-    #galeria{
+    #galeria {
         display: flex;
         flex-direction: column;
         gap: 1rem;
