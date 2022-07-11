@@ -23,7 +23,7 @@ nav {
 }
 nav #logo {
     height: 100%;
-    width: 10vh;
+    width: calc(10vh);
 }
 nav #menu {
     background-color: cadetblue;
