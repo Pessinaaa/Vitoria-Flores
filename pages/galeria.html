@@ -24,15 +24,18 @@
         <header>
             <!--MENU-->
             <nav>
+                <a href="../index.html" title="Ir para a sessão inicial"><img id="logo" src="../media/images/C3.jpg" alt="Logotipo da empresa Vitória Flores & Eventos"></a>
                 <ul id="menu">
-                    <li><a href="../index.html" title="Ir para a página inicial"><img id="logo" src="../media/images/C3.jpg" alt="Logotipo da empresa Vitória Flores & Eventos"></a></li>
-                    <div>
+                    <div id="menu-list" role="menu">
                         <li><a href="#casamento">Casamentos</a></li>
                         <li><a href="#buque-noiva">Buquês de noiva</a></li>
                         <li><a href="#buque">Buquês de flores</a></li>
                         <li><a href="#decoracao">Decorações</a></li>
                         <li><a href="#arranjo">Arranjos</a></li>
                         <li><a href="#cesta">Cestas</a></li>
+                    </div>
+                    <div id="burger" aria-expanded="false" aria-controls="menu-list" aria-haspopup="true" aria-label="Abrir menu">
+                        <div></div>
                     </div>
                 </ul>
             </nav>
@@ -107,6 +110,9 @@
                 <li><a class="icones" href="https://www.instagram.com/adriana.pessina.5/" target="_blank"><i class="uil uil-instagram"></i></a></li>
                 <li><a class="icones" href="tel:1120466778"><i class="uil uil-phone"></i><span>(11) 2046-6778</span></a></li>
             </ul>
+            <div id="telefone">
+                <a class="icones" href="tel:1120466778"><i class="uil uil-phone"></i><span>(11) 2046-6778</span></a>
+            </div>
         </main>
         <footer>
             <p>Todos os direitos reservados &copy; 2001.</p>
@@ -119,5 +125,6 @@
             <!--Lightgallery-js-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="../scripts/setup-lightgallery.js"></script>
+        <script src="../scripts/menu-burger.js"></script>
     </body>
 </html>

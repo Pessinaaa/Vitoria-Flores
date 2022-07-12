@@ -8,34 +8,36 @@
 }
 
 /*MENU*/
-#logo{
+nav {
+    display: flex;
     height: 10vh;
-}
-#menu{
+    width: 100vw;
     position: fixed;
     top: 0;
+    z-index: 1;
+}
+nav #logo {
+    height: 100%;
+    width: calc(10vh);
+}
+nav #menu {
+    background-color: cadetblue;
+    width: 100%;
     display: flex;
     list-style: none;
+    align-items: center;
+}
+nav #menu #menu-list {
     width: 100%;
-    height: 10vh;
-    background-color: cadetblue;
-    z-index: 1;
-    justify-content: space-evenly;
-}
-#menu li{
-    margin: auto 0;
-}
-#menu li a{
-    font-size: 1.4rem;
-    color: white;
-    text-decoration: none;  
-}
-#menu div {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
 }
-#menu div li a:after{
+nav #menu #menu-list li a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+}
+nav #menu #menu-list li a:after{
     content: "";
     display: flex;
     width: 0;
@@ -43,8 +45,11 @@
     background-color: #000;
     transition: 0.5s;
 }
-#menu div li a:hover:after{
+nav #menu #menu-list li a:hover:after{
     width: 100%;
+}
+nav #menu #burger {
+    display: none;
 }
 /*FIM MENU*/
 
@@ -110,10 +115,85 @@ section div a img:hover{
     font-size: 1.5rem;
     align-self: center;
 }
+#telefone{
+    display: none;
+}
 /*FIM ÍCONES*/
 
 footer{
     padding: 1.2rem 0;
     text-align: center;
     font-size: 1rem;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 1023px){
+    nav #menu {
+        justify-content: flex-end;
+    }
+    nav #menu #menu-list {
+        position: fixed;
+        display: grid;
+        left: 0;
+        top: 10vh;
+        height: 0px;
+        width: 100vw;
+        background-color: burlywood;
+        text-align: center;
+        align-items: center;
+        transition: 0.5s;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    nav #menu #menu-list.mostrar-menu {
+        height: 45vh;
+        visibility: visible;
+    }
+    nav #menu #burger {
+        display: block;
+        width: 30px;
+        margin-right: 1rem;
+    }
+    nav #menu #burger div,
+    nav #menu #burger:after,
+    nav #menu #burger:before {
+        background: #fff;
+        content: "";
+        display: block;
+        height: 4px;
+        border-radius: 2px;
+        margin: 5px 0;
+        transition: 0.5s;
+    }
+    nav #menu #burger.fechar:before {
+        transform: translateY(8.7px) rotate(135deg);
+    }
+    nav #menu #burger.fechar:after {
+        transform: translateY(-8.7px) rotate(-135deg);
+    }
+    nav #menu #burger.fechar div {
+        transform: scale(0);
+    }
+
+    #lista-icones{
+        height: auto;
+        gap: 1.5rem;
+        padding: 5vh 0 0 0;
+    }
+    .icones{
+        font-size: 2.5rem;
+    }
+    .icones span{
+        font-size: 1.3rem;
+    }
+    #lista-icones :nth-child(4){
+        display: none;
+    }
+    #telefone{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        padding-bottom: 5vh;
+    }
 }
