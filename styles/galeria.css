@@ -21,7 +21,7 @@ nav #logo {
     width: calc(10vh);
 }
 nav #menu {
-    background-color: cadetblue;
+    background-color: #E2BCB7;
     width: 100%;
     display: flex;
     list-style: none;
@@ -42,7 +42,7 @@ nav #menu #menu-list li a:after{
     display: flex;
     width: 0;
     height: 2px;
-    background-color: #000;
+    background-color: #CA8A8B;
     transition: 0.5s;
 }
 nav #menu #menu-list li a:hover:after{
@@ -53,6 +53,9 @@ nav #menu #burger {
 }
 /*FIM MENU*/
 
+main{
+    background-color: #F6E6E4;
+}
 section{
     padding-top: 15vh;
     min-height: 90vh;
@@ -97,18 +100,17 @@ section div a img:hover{
     gap: 5rem;
     margin: auto;
     align-items: center;
-    background-color: bisque;
     padding: 5vh 0;
 }
 .icones{
     display: flex;
     text-decoration: none;
-    color: #FFF;
+    color: #446A46;
     font-size: 3rem;
     gap: 1rem;
 }
 .icones:hover{
-    color: crimson;
+    color: #243D25;
     transition: 0.3s;
 }
 .icones span{
@@ -124,6 +126,8 @@ footer{
     padding: 1.2rem 0;
     text-align: center;
     font-size: 1rem;
+    background-color: #5B6D5B;
+    color: #F6E6E4;
 }
 
 /*RESPONSIVIDADE*/
@@ -138,7 +142,7 @@ footer{
         top: 10vh;
         height: 0px;
         width: 100vw;
-        background-color: burlywood;
+        background-color: #E2BCB7;
         text-align: center;
         align-items: center;
         transition: 0.5s;

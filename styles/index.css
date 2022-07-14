@@ -26,7 +26,7 @@ nav #logo {
     width: calc(10vh);
 }
 nav #menu {
-    background-color: cadetblue;
+    background-color: #E2BCB7;
     width: 100%;
     display: flex;
     list-style: none;
@@ -47,7 +47,7 @@ nav #menu #menu-list li a:after{
     display: flex;
     width: 0;
     height: 2px;
-    background-color: #000;
+    background-color: #CA8A8B;
     transition: 0.5s;
 }
 nav #menu #menu-list li a:hover:after{
@@ -58,6 +58,9 @@ nav #menu #burger {
 }
 /*FIM MENU*/
 
+main{
+    background-color: #F6E6E4;
+}
 section{
     padding-top: 15vh;
     min-height: 90vh;
@@ -71,7 +74,6 @@ h1, h2{
 #inicio{
     padding: 0;
     height: 100vh;
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,9 +82,6 @@ h1, h2{
     z-index: 0;
 }
 
-#historia{
-    background-color: burlywood;
-}
 #texto-historia{
     text-indent: 2rem;
     padding: 0 15vw;
@@ -97,7 +96,6 @@ h1, h2{
 }
 
 #galeria{
-    background-color: cornflowerblue;
     padding-top: 10vh;
     display: flex;
     gap: 5rem;
@@ -128,7 +126,7 @@ h1, h2{
 }
 #galeria>a{
     text-decoration: none;
-    color: #FFF;
+    color: #446A46;
     font-size: 3rem;
     height: max-content;
     display: inline-flex;
@@ -140,13 +138,10 @@ h1, h2{
     align-self: center;
 }
 #galeria>a:hover{
-    color: crimson;
+    color: #243D25;
     transition: 0.3s;
 }
 
-#contato{
-    background-color: darkolivegreen;
-}
 
 /*ÍCONES CONTATO*/
 #lista-icones{
@@ -161,12 +156,12 @@ h1, h2{
 .icones{
     display: flex;
     text-decoration: none;
-    color: #FFF;
+    color: #446A46;
     font-size: 3rem;
     gap: 1rem;
 }
 .icones:hover{
-    color: crimson;
+    color: #243D25;
     transition: 0.3s;
 }
 .icones span{
@@ -198,6 +193,8 @@ footer{
     padding: 1.2rem 0;
     text-align: center;
     font-size: 1rem;
+    background-color: #5B6D5B;
+    color: #F6E6E4;
 }
 
 /*RESPONSIVIDADE*/
@@ -212,7 +209,7 @@ footer{
         top: 10vh;
         height: 0px;
         width: 100vw;
-        background-color: burlywood;
+        background-color: #E2BCB7;
         text-align: center;
         align-items: center;
         transition: 0.5s;
