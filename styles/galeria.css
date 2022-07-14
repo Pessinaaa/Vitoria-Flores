@@ -201,3 +201,9 @@ footer{
         padding-bottom: 5vh;
     }
 }
+/*DISPOSITIVOS IOS*/
+@supports (-webkit-touch-callout: none){
+    nav #logo {
+        width: 16.6vh;
+    }
+}
