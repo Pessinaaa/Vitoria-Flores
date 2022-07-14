@@ -61,8 +61,8 @@ section{
     min-height: 90vh;
 }
 h1, h2{
-    padding: 0 0 2rem 2.5rem;
-    font-size: 1.25rem;
+    padding: 0 0 1rem 2.5rem;
+    font-size: 1.3rem;
 }
 
 /*GALERIA*/
@@ -132,6 +132,11 @@ footer{
 
 /*RESPONSIVIDADE*/
 @media (max-width: 1023px){
+    h1, h2{
+        padding-left: 0;
+        text-align: center;
+    }
+
     nav #menu {
         justify-content: flex-end;
     }

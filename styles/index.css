@@ -85,6 +85,8 @@ h1, h2{
 #texto-historia{
     text-indent: 2rem;
     padding: 0 15vw;
+    text-align: justify;
+    hyphens: auto;
 }
 #imagem-historia{
     display: flex;
@@ -93,6 +95,7 @@ h1, h2{
 }
 #frase{
     text-align: center;
+    padding: 0 2rem;
 }
 
 #galeria{
@@ -134,6 +137,7 @@ h1, h2{
     align-self: center;
 }
 #galeria span{
+    width: max-content;
     font-size: 1.6rem;
     align-self: center;
 }
@@ -190,7 +194,7 @@ h1, h2{
 }
 
 footer{
-    padding: 1.2rem 0;
+    padding: 1.2rem 1.2rem;
     text-align: center;
     font-size: 1rem;
     background-color: #5B6D5B;
@@ -199,6 +203,11 @@ footer{
 
 /*RESPONSIVIDADE*/
 @media (max-width: 1023px){
+    h1, h2{
+        padding-left: 0;
+        text-align: center;
+    }
+
     nav #menu {
         justify-content: flex-end;
     }
@@ -247,6 +256,9 @@ footer{
         transform: scale(0);
     }
 
+    #texto-historia{
+        padding: 0 2rem;
+    }
     #imagem-historia img {
         width: 80vw;
         height: auto;
