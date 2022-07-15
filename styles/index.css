@@ -309,4 +309,7 @@ footer{
     nav #logo {
         width: 16.6vh;
     }
+    #texto-historia{
+        -webkit-hyphens: auto;
+    }
 }
