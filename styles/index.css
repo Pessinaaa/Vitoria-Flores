@@ -89,9 +89,14 @@ h1, h2{
     hyphens: auto;
 }
 #imagem-historia{
+    height: 80vh;
     display: flex;
     justify-content: center;
     padding: 2rem 0 1rem 0;
+    overflow: hidden;
+}
+#imagem-historia img{
+    object-fit: cover;
 }
 #frase{
     text-align: center;
@@ -259,9 +264,10 @@ footer{
     #texto-historia{
         padding: 0 2rem;
     }
-    #imagem-historia img {
-        width: 80vw;
-        height: auto;
+    #imagem-historia{
+        height: 60vh;
+        width: 90vw;
+        margin: auto;
     }
 
     #galeria {
