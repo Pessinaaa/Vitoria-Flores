@@ -80,6 +80,7 @@ h1, h2{
 }
 .carrossel{
     z-index: 0;
+    top: 2vh;
 }
 
 #texto-historia{
@@ -308,6 +309,12 @@ footer{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
+    }
+}
+/*CORREÇÃO DA ALTURA DO CARROSSEL*/
+@media (min-width: 450px) and (max-height:900px){
+    .item{
+        height: 60vh;
     }
 }
 /*DISPOSITIVOS IOS*/
