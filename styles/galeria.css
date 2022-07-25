@@ -65,6 +65,16 @@ h1, h2{
     font-size: 1.3rem;
 }
 
+#casamento div:first-of-type{
+    text-align: center;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    color: #CA8A8B;
+}
+#casamento>p{
+    text-align: center;
+}
+
 /*GALERIA*/
 section div{
     margin: auto 0;
@@ -183,6 +193,10 @@ footer{
     }
     nav #menu #burger.fechar div {
         transform: scale(0);
+    }
+
+    #casamento div:first-of-type{
+        display: block;
     }
 
     #lista-icones{

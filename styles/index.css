@@ -152,6 +152,9 @@ h1, h2{
     transition: 0.3s;
 }
 
+#contato p{
+    padding: 0 0 1rem 2.5rem;
+}
 
 /*ÍCONES CONTATO*/
 #lista-icones{
@@ -291,6 +294,10 @@ footer{
         font-size: 1.4rem;
     }
 
+    #contato p{
+        padding-left: 0;
+        text-align: center;
+    }
     #lista-icones{
         height: auto;
         gap: 1.5rem;
