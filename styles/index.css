@@ -12,6 +12,10 @@ header, main{
     font-size: 1.1rem;
 }
 
+.title-reveal, .reveal {
+    visibility: hidden;
+}
+
 /*MENU*/
 nav {
     display: flex;
@@ -64,6 +68,7 @@ main{
 section{
     padding-top: 15vh;
     min-height: 90vh;
+    overflow-x: hidden;
 }
 h1, h2{
     padding: 0 0 2rem 2.5rem;
